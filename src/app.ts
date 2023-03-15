@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+// app.js
+import 'windi.css';
 import './app.less'
 
 const App = createApp({

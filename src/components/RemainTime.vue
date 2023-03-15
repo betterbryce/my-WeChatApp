@@ -1,5 +1,5 @@
 <template>
-	<text>当前剩余时间为:{{nowTime}}</text>
+	<view class="text-center">当前剩余时间为:<i class="text-base bold">{{nowTime}}</i></view>
 </template>
 <script>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
@@ -7,7 +7,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 export default {
 	setup() { 
     let timer = ref({})
-    var nowTime = ref('')
+    let nowTime = ref('')
 
     //计算距离下班时间
     const dateFormat = () => {

@@ -1,22 +1,26 @@
 <template>
   <view class="index">
     <!-- 距离下班时间 -->
-    <Todo />
+    <RemainTime />
     <!-- 展示上班金额 -->
     <Counter />
+    <!-- 距离时间组合 -->
+    <TimeCom />
   </view>
 </template>
 
 <script>
 import './index.less'
 import Counter from '../../components/Counter.vue'
-import Todo from '../../components/Todo.vue'
+import RemainTime from '../../components/RemainTime.vue'
+import TimeCom from '../../components/TimeCom.vue'
 
 export default {
   name: 'Index',
   components: {
     Counter,
-    Todo
+    RemainTime,
+    TimeCom
   }
 }
 </script>
